@@ -6,7 +6,6 @@
   font-style: normal;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
  
 html{
@@ -16,7 +15,8 @@ html{
 body {
   font-family: "Patrick Hand";
   font-weight: 400;
-  background-color: #ebebeb;
+ background: #3111ad;
+ background: linear-gradient(0deg,rgba(49, 17, 173, 1) 0%, rgba(252, 176, 69, 1) 85%);
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -28,7 +28,7 @@ body {
  }
     
  .el {
-  background-color: #ebebeb;
+  background-color: #505050;
   color: black;
   display: grid;
   place-content: center;
@@ -38,7 +38,7 @@ body {
   grid-area: header;
   width: 100vw;
   height: 35px;
-  background-color: #505050;
+  background-color: #50505085;
   display: flex;
   justify-content: center;
  }
@@ -47,7 +47,7 @@ body {
   padding: none;
   letter-spacing: 3px;
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
   font-weight: bold;
  }
@@ -58,6 +58,7 @@ body {
   display: flex;
   padding: 10px;
   margin: 0;
+  gap: 10px;
  }
 
  a {
@@ -72,44 +73,50 @@ body {
   cursor: pointer;
   transition: color 0.3s ease-in-out;
   border-radius: 20px;
-  background-color: #808080;
+  background-color: #cfcfcf67;
+  padding: 8px;
  }
 
  li .nav-link1:hover {
-  background-color: rgba(221, 206, 68);
-  border-radius: 20px;
+  background-color: #5c5c5c;
+  border-radius: 10px;
   color: white;
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+  padding: 0 10px 0 10px;
  }
 
  li .nav-link2:hover {
-  background-color: rgba(232, 150, 28, 1);
+  background-color: #5c5c5c;
   color: white;
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
   border-radius: 20px;
+  padding: 0 10px 0 10px;
  }
  li .nav-link3:hover {
-  background-color: rgba(28, 99, 232, 1);
+  background-color: #5c5c5c;
   color: white;
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
   border-radius: 20px;
+  padding: 0 10px 0 10px;
  }
  li .nav-link4:hover {
-  background-color: rgba(30, 201, 107, 1);
+  background-color: #5c5c5c;
   color: white;
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
   border-radius: 20px;
+  padding: 0 10px 0 10px;
  }
  li .nav-link5:hover {
-  background-color: rgba(207, 106, 43, 1);
+  background-color: #5c5c5c;
   color: white;
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+  transition: all 0.5s;
   border-radius: 20px;
+  padding: 0 10px 0 10px;
  }
 
 
@@ -118,20 +125,27 @@ body {
   justify-items: center;
   place-content: center;
   gap: 1rem;
-  background-color: ghostwhite;
+  background-color: #50505085;
  }
 
  .container {
    grid-area: main;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(13, 1fr);
-   gap: 8px;
+   grid-template-rows: 200px 630px repeat(11, 1fr);
+   gap: 10px;
+   background-color:transparent;
+   background: transparent;
+   margin: 0 200px 20px 200px;
+   justify-content: center;
+   align-content: center;
   }
   
+  
+
   .footer {
    grid-area: footer;
-   background-color: #ebebeb;
+   background-color: rgba(49, 17, 173, 1);
    color: black;
    place-content: center;
    justify-items: center;
@@ -147,7 +161,7 @@ body {
 
 
   .box:first-child {
-    background-color: #ebebeb;
+    background-color:transparent;
     color: black;
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
@@ -155,10 +169,13 @@ body {
     place-content: center;
     justify-items: center;
     border-radius: 5px;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+
   }
   .box:nth-child(2) {
-    background: #1ab827;
-    background: linear-gradient(90deg,rgba(26, 184, 39, 1) 16%, rgb(221, 206, 68) 88%);
+    background: #00000033;
     grid-row: span 2 / span 2;
     grid-row-start: 3;
     display: grid;
@@ -167,8 +184,7 @@ body {
   }
 
   .box:nth-child(3) {
-    background: #1AB827;
-    background: linear-gradient(270deg,rgba(26, 184, 39, 1) 7%, rgba(221, 206, 68) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-row-start: 3;
     display: grid;
@@ -178,8 +194,7 @@ body {
   }
 
   .box:nth-child(4) {
-    background: #1AB827;
-    background: linear-gradient(270deg,rgba(26, 184, 39, 1) 7%, rgba(221, 206, 68) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 4;
@@ -190,8 +205,7 @@ body {
   }
   
   .box:nth-child(5) {
-    background: #90a113;
-    background: linear-gradient(270deg,rgba(144, 161, 19, 1) 7%, rgba(232, 150, 28, 1) 93%);
+    background: #00000033;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 5;
@@ -201,8 +215,7 @@ body {
   }
 
   .box:nth-child(6) {
-    background: #90a113;
-    background: linear-gradient(90deg,rgba(144, 161, 19, 1) 7%, rgba(232, 150, 28, 1) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 5;
@@ -213,8 +226,7 @@ body {
   }
 
   .box:nth-child(7) {
-    background: #90a113;
-    background: linear-gradient(90deg,rgba(144, 161, 19, 1) 7%, rgba(232, 150, 28, 1) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-row-start: 6;
     display: grid;
@@ -224,8 +236,7 @@ body {
   }
 
   .box:nth-child(8) {
-    background: #19bed4;
-    background: linear-gradient(90deg,rgba(25, 190, 212, 1) 7%, rgba(28, 99, 232, 1) 93%);
+    background: #00000033;
     grid-row: span 2 / span 2;
     grid-row-start: 7;
     display: grid;
@@ -234,8 +245,7 @@ body {
   }
 
   .box:nth-child(9) {
-    background: #19bed4;
-    background: linear-gradient(270deg,rgba(25, 190, 212, 1) 7%, rgba(28, 99, 232, 1) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-row-start: 7;
     display: grid;
@@ -245,8 +255,7 @@ body {
   }
 
   .box:nth-child(10) {
-    background: #19bed4;
-    background: linear-gradient(270deg,rgba(25, 190, 212, 1) 7%, rgba(28, 99, 232, 1) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 8;
@@ -257,8 +266,7 @@ body {
   }
 
   .box:nth-child(11) {
-    background: #b134c2;
-    background: linear-gradient(270deg,rgba(177, 52, 194, 1) 7%, rgba(30, 201, 107, 1) 93%);
+    background: #00000033;
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 9;
@@ -268,8 +276,7 @@ body {
   }
 
   .box:nth-child(12) {
-    background: #b134c2;
-    background: linear-gradient(90deg,rgba(177, 52, 194, 1) 7%, rgba(30, 201, 107, 1) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 9;
@@ -280,8 +287,7 @@ body {
   }
 
   .box:nth-child(13) {
-    background: #b134c2;
-    background: linear-gradient(90deg,rgba(177, 52, 194, 1) 7%, rgba(30, 201, 107, 1) 93%);
+    background: #00000033;
     grid-column: span 2 / span 2;
     grid-row-start: 10;
     display: grid;
@@ -291,8 +297,7 @@ body {
   }
 
   .box:nth-child(14) {
-    background: #43bcde;
-    background: linear-gradient(180deg,rgba(67, 188, 222, 1) 7%, rgba(207, 106, 43, 1) 93%);
+    background: #00000033;
     grid-column: span 3 / span 3;
     grid-row-start: 11;
     display: grid;
@@ -301,8 +306,7 @@ body {
   }
 
   .box:nth-child(15) {
-    background: #43bcde;
-    background: linear-gradient(0deg,rgba(67, 188, 222, 1) 7%, rgba(207, 106, 43, 1) 93%);
+    background: #00000033;
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-row-start: 12;
